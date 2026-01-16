@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 
 import { NextResponse } from 'next/server';
 import { db } from '@/db';
@@ -46,3 +47,4 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: 'Failed to generate report' }, { status: 500 });
   }
 }
+

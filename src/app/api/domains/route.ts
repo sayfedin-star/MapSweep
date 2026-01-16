@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 
 import { NextResponse } from 'next/server';
 import { db } from '@/db';
@@ -45,3 +46,4 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Failed to create domain' }, { status: 500 });
   }
 }
+

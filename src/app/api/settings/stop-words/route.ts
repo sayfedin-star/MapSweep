@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { NextResponse } from 'next/server';
 import { db } from '@/db';
 import { settings } from '@/db/schema';
@@ -53,3 +54,4 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Failed to save settings' }, { status: 500 });
   }
 }
+
