@@ -1,6 +1,5 @@
-export const runtime = 'edge';
-
 'use client';
+export const runtime = 'edge';
 
 import { useState, use } from 'react';
 import { useRouter } from 'next/navigation';
@@ -314,4 +313,3 @@ export default function SitemapImportPage({ params }: { params: Promise<{ id: st
     </div>
   );
 }
-
