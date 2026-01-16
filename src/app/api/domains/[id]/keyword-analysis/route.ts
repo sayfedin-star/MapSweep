@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { NextResponse } from 'next/server';
 import { db } from '@/db';
 import { sql } from 'drizzle-orm';
@@ -59,3 +60,4 @@ export async function GET(
     return NextResponse.json({ error: 'Failed to fetch keyword analysis' }, { status: 500 });
   }
 }
+

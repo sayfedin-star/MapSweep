@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 'use client';
 
 import { useState, useEffect, use } from 'react';
@@ -284,3 +285,4 @@ export default function KeywordAnalysisPage({ params }: { params: Promise<{ id: 
     </div>
   );
 }
+

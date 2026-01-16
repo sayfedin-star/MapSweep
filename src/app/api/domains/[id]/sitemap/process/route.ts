@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 
 import { NextResponse } from 'next/server';
 import { db } from '@/db';
@@ -93,3 +94,4 @@ export async function POST(
     return NextResponse.json({ error: 'Failed to process URLs' }, { status: 500 });
   }
 }
+

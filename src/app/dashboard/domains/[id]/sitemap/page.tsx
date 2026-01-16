@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 
 'use client';
 
@@ -313,3 +314,4 @@ export default function SitemapImportPage({ params }: { params: Promise<{ id: st
     </div>
   );
 }
+

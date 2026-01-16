@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 import { NextResponse } from 'next/server';
 import { db } from '@/db';
 import { domains, keywords, keywordRankings, recipeUrls, importLogs } from '@/db/schema';
@@ -260,4 +261,5 @@ export async function POST(
     return NextResponse.json({ error: `Failed to import: ${errorMessage}` }, { status: 500 });
   }
 }
+
 

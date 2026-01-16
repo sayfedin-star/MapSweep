@@ -1,3 +1,4 @@
+export const runtime = 'edge';
 
 import { NextResponse } from 'next/server';
 import { SitemapParser } from '@/lib/sitemap-parser';
@@ -22,3 +23,4 @@ export async function POST(
     return NextResponse.json({ error: error.message || 'Failed to parse sitemap' }, { status: 500 });
   }
 }
+
