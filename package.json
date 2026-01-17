@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx @cloudflare/next-on-pages@1",
-    "deploy": "npx wrangler pages deploy .vercel/output/static",
-    "next:build": "next build",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint"
   },
@@ -23,7 +21,6 @@
     "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.16",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/papaparse": "^5.5.2",
