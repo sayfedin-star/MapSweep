@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "npx @cloudflare/next-on-pages@1",
+    "deploy": "npx wrangler pages deploy .vercel/output/static",
     "next:build": "next build",
     "start": "next start",
     "lint": "eslint"
