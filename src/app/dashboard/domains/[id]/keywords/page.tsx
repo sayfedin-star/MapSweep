@@ -269,7 +269,7 @@ export default function KeywordImportPage({ params }: { params: Promise<{ id: st
                         Return to Domains
                     </button>
                     <button 
-                        onClick={() => router.push(`/dashboard/keywords`)}
+                        onClick={() => router.push(`/dashboard/domains/${id}/keyword-analysis`)}
                          className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
                     >
                         View Keyword Analysis
